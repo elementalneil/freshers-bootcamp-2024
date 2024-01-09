@@ -6,21 +6,21 @@ def filter_(search_strings, key, comparator):
     return "Not Found"
     
     
-def starts_with(search_string, key):
+def check_from_start(search_string, key):
     if search_string.startswith(key):
         return True
     else:
         return False
         
         
-def ends_with(search_string, key):
+def check_from_end(search_string, key):
     if search_string.endswith(key):
         return True
     else:
         return False
         
         
-def equal_to(search_string, key):
+def check_equal(search_string, key):
     if search_string == key:
         return True
     else:
@@ -32,26 +32,26 @@ def main():
     
     # Starts With Demo
     key = '1'   # Positive Example
-    print(filter_(search_strings, key, starts_with))
+    print(filter_(search_strings, key, check_from_start))
     
     key = '32'  # Negative Example
-    print(filter_(search_strings, key, starts_with))
+    print(filter_(search_strings, key, check_from_start))
     
     
     # Ends With Demo
     key = '59'   # Positive Example
-    print(filter_(search_strings, key, ends_with))
+    print(filter_(search_strings, key, check_from_end))
     
     key = '7'   # Negative Example
-    print(filter_(search_strings, key, ends_with))
+    print(filter_(search_strings, key, check_from_end))
     
     
     # Equality Demo
     key = '159'  # Positive Example
-    print(filter_(search_strings, key, equal_to))
+    print(filter_(search_strings, key, check_equal))
     
     key = '123'  # Negative Example
-    print(filter_(search_strings, key, equal_to))
+    print(filter_(search_strings, key, check_equal))
     
     
 if __name__ == '__main__':
