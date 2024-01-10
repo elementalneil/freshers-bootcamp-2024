@@ -1,3 +1,5 @@
+## Please refer to the file 'string_filtering_oops.py' for the initial version of this program.
+
 class ConsoleDisplayController:
   def __init__(self):
     self.__content = ""
