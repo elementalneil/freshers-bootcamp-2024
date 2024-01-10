@@ -1,6 +1,7 @@
 class String_evaluator:
     # comparator should be any function that takes two strings as input, returning a boolean output
-    def filter_(self, search_strings, key, comparator):    
+    @staticmethod
+    def filter_(search_strings, key, comparator):    
         for search_string in search_strings:
             if comparator(search_string, key):
                 return "Found"
@@ -52,7 +53,7 @@ class Filter_functionality_tester:
                                     filter_(self.search_strings, self.key, criterion_obj.check_from_start))
         print('Checking from End:', string_evaluator_obj.
                                     filter_(self.search_strings, self.key, criterion_obj.check_from_end))
-        print('Checking for Exacrt Match:', string_evaluator_obj.
+        print('Checking for Exact Match:', string_evaluator_obj.
                                     filter_(self.search_strings, self.key, criterion_obj.check_equal))
             
             
