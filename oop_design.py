@@ -29,8 +29,8 @@ class StringListFilterController:
   def __init__(self):
     self.__strategy = StartsWithStrategy()
 
-  def filter(self, string_list):
-    self.__strategy.set_starts_with('AB')
+  def filter(self, string_list, key):
+    self.__strategy.set_starts_with(key)
     filtered_list = []
 
     for string in string_list:
@@ -38,3 +38,13 @@ class StringListFilterController:
         filtered_list.append(string)
 
     return filtered_list
+
+
+def main():
+  filter_controller = StringListFilterController()
+  string_list = ['abc', 'def', 'ghi', 'jkl', 'abd']
+  filtered_list = filter_controller.filter(string_list, 'a')
+
+  display_controller = ConsoleDisplayController()
+  display_controller.set_content(filtered_list)
+  display_controller.display()
