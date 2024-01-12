@@ -3,13 +3,53 @@
 using namespace std;
 
 class WordDocument {
+private:
     vector<DocumentParts> parts;
+    IConverter i_converter;
     
+public:
     void open() {
 
     }
 
     void save() {
+
+    }
+
+    void add_part(DocumentParts part) {
+        parts.append(part);
+    }
+
+    void convert_to_html() {
+        for (auto part in parts) {
+            i_converter.convert(part);
+        }
+    }
+};
+
+
+class IConverter {
+    virtual void convert(Header header) = 0;
+    virtual void convert(Paragraph paragraph) = 0;
+    virtual void convert(Hyperlink hyperlink) = 0;
+    virtual void convert(Footer footer) = 0;
+};
+
+
+class HTMLConverter {
+    void convert(Header header) {
+
+    }
+
+    void convert(Paragraph paragraph) {
+
+    }
+
+    void convert(Hyperlink hyperlink) {
+
+    }
+
+    void convert(Footer footer) {
 
     }
 };
@@ -21,10 +61,13 @@ class DocumentParts {
 
     virtual void paint() = 0;
     virtual void save() = 0;
+    void convert(IConverter i_converter) {
+        // call i_converter.convert()
+    }
 };
 
 
-class Header {
+class Header : public DocumentParts {
     string title;
 
     void paint() {
@@ -37,7 +80,7 @@ class Header {
 };
 
 
-class Paragraph {
+class Paragraph : public DocumentParts {
     string content;
 
     void paint() {
@@ -50,7 +93,7 @@ class Paragraph {
 };
 
 
-class Hyperlink {
+class Hyperlink : public DocumentParts {
     string url;
     string text;
 
@@ -64,7 +107,7 @@ class Hyperlink {
 };
 
 
-class Footer {
+class Footer : public DocumentParts {
     string text;
 
     void paint() {
