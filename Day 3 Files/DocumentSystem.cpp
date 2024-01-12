@@ -8,6 +8,10 @@ private:
     IConverter i_converter;
     
 public:
+    WordDocument {
+        i_converter = HTMLConverter();
+    }
+
     void open() {
 
     }
