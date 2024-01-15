@@ -30,7 +30,7 @@ private:
 
     vector<Subscriber> subscriber_list;
 
-    void notify() {
+    void notify_subscribers() {
         for (Subscriber subscriber : subscriber_list) {
             subscriber.alert(state);
         }
@@ -46,26 +46,32 @@ public:
 
     void start() {
         state = "Running";
+        notify_subscribers();
     }
 
     void abort() {
         state = "Aborted";
+        notify_subscribers();
     }
 
     void sleep(int time_ms) {
         state = "Sleep";
+        notify_subscribers();
     }
 
     void wait() {
         state = "Waiting";
+        notify_subscribers();
     }
 
     void stop() {
         state = "Stopped";
+        notify_subscribers();
     }
 
     void suspend() {
         state = "Suspend";
+        notify_subscribers();
     }
 
     void subscribe(Subscriber subscriber) {
