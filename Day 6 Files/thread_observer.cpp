@@ -85,4 +85,4 @@ public:
             subscriber_list.erase(deletion_index);
         }
     }
-}
+};
