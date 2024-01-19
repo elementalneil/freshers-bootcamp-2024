@@ -134,7 +134,7 @@ class Product
                                  $"Warranty (months): {warrantyMonths}\n" +
                                  $"Tax Price: {GetTaxPrice()}\n" +
                                  $"Discount Price: {GetDiscountPrice()}\n" +
-                                 $"Total Price: {GetTotalPrice()}";
+                                 $"Total Price: {GetTotalPrice()}\n";
 
         return formattedString;
     }
@@ -145,7 +145,12 @@ class ProductManager
 {
     static void Main()
     {
-        Product myProduct = new Product();
+        Product[] myProducts;
+        Console.WriteLine("Enter Maximum Length of Array: ");
+        int maxItems = int.Parse(Console.ReadLine());
+        myProducts = new Product[maxItems];
+
+        int cur_index = 0;
 
         while (true)
         {
@@ -160,6 +165,12 @@ class ProductManager
                 switch (choice)
                 {
                     case 1:
+                        if (cur_index >= maxItems) {
+                            Console.WriteLine("Array is full. You cannot add more items.");
+                        }
+
+                        Product myProduct = new Product();
+
                         Console.WriteLine("Enter product details:");
 
                         Console.Write("Product ID: ");
@@ -171,7 +182,7 @@ class ProductManager
                         Console.Write("Manufacturing Date (yyyy-MM-dd): ");
                         myProduct.ManufacturingDate = Console.ReadLine();
 
-                        Console.Write("Warranty: ");
+                        Console.Write("Warranty (in months): ");
                         myProduct.Warranty = int.Parse(Console.ReadLine());
 
                         Console.Write("Price: ");
@@ -186,10 +197,15 @@ class ProductManager
                         Console.Write("Discount (1-30): ");
                         myProduct.Discount = int.Parse(Console.ReadLine());
 
+                        myProducts[cur_index] = myProduct;
+                        cur_index++;
+
                         break;
 
                     case 2:
-                        Console.WriteLine(myProduct.Display());
+                        for (int i = 0; i < cur_index; i++) {
+                            Console.WriteLine(myProducts[i].Display());
+                        }
                         break;
 
                     case 3:
