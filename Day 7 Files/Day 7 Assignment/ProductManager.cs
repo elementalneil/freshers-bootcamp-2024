@@ -1,4 +1,5 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 
 class Product
 {
@@ -141,40 +142,37 @@ class Product
 }
 
 
-class ProductManager
-{
-    static void Main()
-    {
-        Product[] myProducts;
-        Console.WriteLine("Enter Maximum Length of Array: ");
-        int maxItems = int.Parse(Console.ReadLine());
-        myProducts = new Product[maxItems];
+class ProductManager {
+    static void Main() {
+        Product myProduct;
+        Dictionary<int, Product> productIdToProductMap = new Dictionary<int, Product>();
 
-        int cur_index = 0;
-
-        while (true)
-        {
+        while (true) {
             Console.WriteLine("Choose an option:");
-            Console.WriteLine("1. Enter product details");
+            Console.WriteLine("1. Enter new product");
             Console.WriteLine("2. Display product details");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("3. Delete product");
+            Console.WriteLine("4. Exit");
 
             int choice;
-            if (int.TryParse(Console.ReadLine(), out choice))
-            {
-                switch (choice)
-                {
+            if (int.TryParse(Console.ReadLine(), out choice)) {
+                switch (choice) {
                     case 1:
-                        if (cur_index >= maxItems) {
-                            Console.WriteLine("Array is full. You cannot add more items.");
-                        }
-
-                        Product myProduct = new Product();
+                        myProduct = new Product();
+                        int currentID;
 
                         Console.WriteLine("Enter product details:");
 
                         Console.Write("Product ID: ");
-                        myProduct.ProductID = int.Parse(Console.ReadLine());
+                        currentID = int.Parse(Console.ReadLine());
+
+                        // Check if id already exists
+                        // Break if it does, or continue
+                        if (productIdToProductMap.ContainsKey(currentID)) {
+                            Console.WriteLine("Product With Same Product ID Already Exists");
+                            break;
+                        }
+                        myProduct.ProductID = currentID;
 
                         Console.Write("Name: ");
                         myProduct.Name = Console.ReadLine();
@@ -197,18 +195,32 @@ class ProductManager
                         Console.Write("Discount (1-30): ");
                         myProduct.Discount = int.Parse(Console.ReadLine());
 
-                        myProducts[cur_index] = myProduct;
-                        cur_index++;
+                        productIdToProductMap[currentID] = myProduct;
 
                         break;
 
                     case 2:
-                        for (int i = 0; i < cur_index; i++) {
-                            Console.WriteLine(myProducts[i].Display());
+                        Console.Write("Enter Product ID: ");
+                        int productIDInput = int.Parse(Console.ReadLine());
+                        if (productIdToProductMap.ContainsKey(productIDInput)) {
+                            Console.WriteLine(productIdToProductMap[productIDInput].Display());
+                        }
+                        else {
+                            Console.WriteLine("Product With Given ID does not exist.");
                         }
                         break;
 
                     case 3:
+                        productIDInput = int.Parse(Console.ReadLine());
+                        if (productIdToProductMap.ContainsKey(productIDInput)) {
+                            productIdToProductMap.Remove(productIDInput);
+                        }
+                        else {
+                            Console.WriteLine("Product With Given ID does not exist.");
+                        }
+                        break;
+
+                    case 4:
                         Environment.Exit(0);
                         break;
 
@@ -217,8 +229,7 @@ class ProductManager
                         break;
                 }
             }
-            else
-            {
+            else {
                 Console.WriteLine("Invalid input. Please enter a valid number.");
             }
 
