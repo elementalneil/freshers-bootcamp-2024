@@ -1,0 +1,7 @@
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\bin\Debug\OrderManager.exe.config
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\bin\Debug\OrderManager.exe
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\bin\Debug\OrderManager.pdb
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\obj\Debug\OrderManager.csproj.AssemblyReference.cache
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CoreCompileInputs.cache
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\obj\Debug\OrderManager.exe
+C:\My Files\Visual Studio Repos\OrderManager\OrderManager\obj\Debug\OrderManager.pdb
