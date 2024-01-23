@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CommandDesignPattern {
     public class Source {
-        private Command command;
+        private Action command;
 
-        public void SetCommand(Command commandObj) {
+        public void SetCommand(Action commandObj) {
             command = commandObj;
         }
 
