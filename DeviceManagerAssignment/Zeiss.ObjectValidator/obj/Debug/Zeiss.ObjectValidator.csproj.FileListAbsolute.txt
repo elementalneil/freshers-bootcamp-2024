@@ -1,0 +1,6 @@
+C:\My Files\Visual Studio Repos\DeviceManagerAssignment\Zeiss.ObjectValidator\bin\Debug\Zeiss.ObjectValidator.dll
+C:\My Files\Visual Studio Repos\DeviceManagerAssignment\Zeiss.ObjectValidator\bin\Debug\Zeiss.ObjectValidator.pdb
+C:\My Files\Visual Studio Repos\DeviceManagerAssignment\Zeiss.ObjectValidator\obj\Debug\Zeiss.ObjectValidator.csproj.AssemblyReference.cache
+C:\My Files\Visual Studio Repos\DeviceManagerAssignment\Zeiss.ObjectValidator\obj\Debug\Zeiss.ObjectValidator.csproj.CoreCompileInputs.cache
+C:\My Files\Visual Studio Repos\DeviceManagerAssignment\Zeiss.ObjectValidator\obj\Debug\Zeiss.ObjectValidator.dll
+C:\My Files\Visual Studio Repos\DeviceManagerAssignment\Zeiss.ObjectValidator\obj\Debug\Zeiss.ObjectValidator.pdb
