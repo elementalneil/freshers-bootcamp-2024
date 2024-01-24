@@ -1,0 +1,6 @@
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\Zeiss.DoorSimulatorPrototype\obj\Debug\Zeiss.DoorSimulatorPrototype.csproj.AssemblyReference.cache
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\Zeiss.DoorSimulatorPrototype\obj\Debug\Zeiss.DoorSimulatorPrototype.csproj.CoreCompileInputs.cache
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\Zeiss.DoorSimulatorPrototype\bin\Debug\Zeiss.DoorSimulatorPrototype.dll
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\Zeiss.DoorSimulatorPrototype\bin\Debug\Zeiss.DoorSimulatorPrototype.pdb
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\Zeiss.DoorSimulatorPrototype\obj\Debug\Zeiss.DoorSimulatorPrototype.dll
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\Zeiss.DoorSimulatorPrototype\obj\Debug\Zeiss.DoorSimulatorPrototype.pdb
