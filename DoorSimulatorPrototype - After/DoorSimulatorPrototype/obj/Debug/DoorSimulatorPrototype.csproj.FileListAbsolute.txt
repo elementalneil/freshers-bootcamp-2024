@@ -8,3 +8,13 @@ C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\DoorSimulatorPrototype\ob
 C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.csproj.CopyComplete
 C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.exe
 C:\My Files\Visual Studio Repos\DoorSimulatorPrototype\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.pdb
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\bin\Debug\DoorSimulatorPrototype.exe.config
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\bin\Debug\DoorSimulatorPrototype.exe
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\bin\Debug\DoorSimulatorPrototype.pdb
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\bin\Debug\Zeiss.DoorSimulatorPrototype.dll
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\bin\Debug\Zeiss.DoorSimulatorPrototype.pdb
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.csproj.AssemblyReference.cache
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.csproj.CoreCompileInputs.cache
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.csproj.CopyComplete
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.exe
+C:\My Files\Visual Studio Repos\DoorSimulatorPrototype - After\DoorSimulatorPrototype\obj\Debug\DoorSimulatorPrototype.pdb

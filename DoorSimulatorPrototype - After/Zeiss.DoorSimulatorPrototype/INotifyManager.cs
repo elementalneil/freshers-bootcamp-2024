@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Zeiss.DoorSimulatorPrototype {
     public interface INotifyManager {
-        void Update(DoorState state);
-        void ModifyTimer(int duration);
+        void Update(bool state);
     }
 }

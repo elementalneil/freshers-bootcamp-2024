@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Zeiss.DoorSimulatorPrototype {
-    public class AutoCloser { 
+    public class AutoCloser : INotifyManager {
         public Operator doorOperator;
 
         public AutoCloser() { }

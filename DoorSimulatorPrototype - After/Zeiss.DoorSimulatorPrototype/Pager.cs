@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Zeiss.DoorSimulatorPrototype {
-    public class Pager {
+    public class Pager : INotifyManager {
         public Pager() { }
 
         private void SendNotification() {

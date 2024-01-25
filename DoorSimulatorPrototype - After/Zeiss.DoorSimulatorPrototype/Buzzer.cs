@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Zeiss.DoorSimulatorPrototype {
-    public class Buzzer {
+    public class Buzzer : INotifyManager {
         public Buzzer() { }
 
         public void Update(bool alertRequiredState) {
