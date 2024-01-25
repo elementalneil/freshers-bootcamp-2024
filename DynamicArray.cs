@@ -33,7 +33,7 @@ namespace DynamicArray {
                     throw new IndexOutOfRangeException("Index is out of range.");
                 }
 
-                array[index] = value;
+                this.Add(index, value);
             }
         }
 
